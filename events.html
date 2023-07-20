@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body >
+
+
+    <p id="remove">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias nobis enim amet tempore quia iure
+        necessitatibus eum aliquam, sint harum deserunt? Omnis quibusdam excepturi corporis ab natus est nulla magnam?
+    </p>
+    <button ondblclick="P()">P</button>
+
+    <button onclick="cont()">Click</button>
+    <h1 id="tes">JAVASCRIPT</h1>
+
+    <button id="remove" onmouseenter="P()">M</button>
+    <p id="M">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, rerum.</p>
+    <button id="remove">clickme</button>
+
+
+    <p id="abc" onmouseout="events()">Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Tempora, voluptatem laboriosam accusantium facere sit eligendi.</p>
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        const events = () => {
+
+            document.getElementById("abc").style.color = "yellow"
+           
+            document.getElementById("body").style.backgroundColor = "lime"
+
+        }
+
+
+
+
+
+        // events in JS
+        const cont = () => {
+            document.getElementById("tes").style.color = "blue"
+            document.getElementById("tes").style.backgroundColor = "red"
+            alert("JAVASCRIPT");
+
+        }
+        // cont()
+
+        const p =()=>{
+            document.getElementById("pi").style.color="lime"
+            alert("p")
+        }
+        const P = () => {
+            document.getElementById("M").style.color = "orange"
+            let l = document.getElementById("remove");
+
+            if (l.style.display === "none") {
+                // document.getElementById("remove").style.display="block"
+            }
+            else {
+                document.getElementById("remove").style.display = "none"
+
+            }
+        }
+
+
+
+    </script>
+</body>
+
+</html>
